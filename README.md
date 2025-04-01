@@ -11,6 +11,22 @@ This project focuses on:
 2. Defense mechanisms against Byzantine attacks
 3. Application of privacy protection techniques in federated learning
 
+## System Architecture
+
+![联邦学习架构](./src/assets/architecture.png)
+
+The system architecture consists of the following components and workflow:
+
+1. **Initialize and group clients**: Server initializes the system and organizes clients into groups
+2. **Local training**: Each client trains models on their local data
+3. **Allocate privacy budget**: Privacy parameters are determined for each client
+4. **Inject noise**: Noise is added to model updates for privacy protection
+5. **Upload gradients**: Clients send protected model updates to the server
+6. **Detect malicious client**: Server identifies potentially malicious clients
+7. **Group retraining**: Affected client groups retrain their models
+8. **Aggregate**: Server aggregates all valid model updates
+9. **Broadcast global model**: Updated global model is distributed to all clients
+
 ## Project Structure
 
 ```
