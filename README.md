@@ -13,7 +13,7 @@ This project focuses on:
 
 ## System Architecture
 
-![联邦学习架构](./src/assets/architecture.png)
+![architecture](./src/assets/architecture.png)
 
 The system architecture consists of the following components and workflow:
 
